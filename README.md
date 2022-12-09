@@ -25,4 +25,7 @@ Caso o usuário não tenha cadastro, basta clicar em começar agora que logo em 
     styled-components
     react-hook-form
 
-![image](https://user-images.githubusercontent.com/84928607/206804947-4b31bdb9-8c28-48b0-8caf-4d60c5d79a6b.png)
+![image](https://user-images.githubusercontent.com/84928607/206805057-f8c16847-f1f7-4cf2-ac94-5b38bd05d49c.png)
+
+
+![image](https://user-images.githubusercontent.com/84928607/206805097-49d2653d-38e0-4c2f-af1b-3a553e659b54.png)

@@ -1,4 +1,4 @@
-import { MdEmail, MdLock } from "react-icons/md";
+import { MdEmail, MdLock, MdPerson} from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -13,8 +13,8 @@ import { api } from "../../services/api";
 import {
   Column,
   Container,
-  CriarText,
-  EsqueciText,
+  FazerLogin,
+  // EsqueciText,
   Row,
   SubtitleLogin,
   Title,
@@ -75,9 +75,16 @@ const Login = () => {
         </Column>
         <Column>
           <Wrapper>
-            <TitleLogin>Faça seu cadastro</TitleLogin>
-            <SubtitleLogin>Faça seu login e make the change._</SubtitleLogin>
+            <TitleLogin>Começe agora grátis</TitleLogin>
+            <SubtitleLogin>Crie a sua conta e make the change.</SubtitleLogin>
             <form onSubmit={handleSubmit(onSubmit)}>
+            <Input
+                name="name"
+                errorMessage={errors?.email?.message}
+                control={control}
+                placeholder="Nome completo"
+                leftIcon={<MdPerson />}
+              />
               <Input
                 name="email"
                 errorMessage={errors?.email?.message}
@@ -93,11 +100,13 @@ const Login = () => {
                 type="password"
                 leftIcon={<MdLock />}
               />
-              <Button title="Entrar" variant="secondary" type="submit" />
+              <Button title="Criar minha conta" variant="secondary" type="submit" />
             </form>
             <Row>
-              <EsqueciText>Esqueci minha senha</EsqueciText>
-              <CriarText>Criar Conta</CriarText>
+            <SubtitleLogin>Ao clicar em "Criar minha conta grátis", declaro que aceito as Políticas de Privacidade e os termos de Uso da DIO.<br></br>
+            <p>Já tenho conta</p><FazerLogin>Fazer login</FazerLogin> 
+           
+            </SubtitleLogin>
             </Row>
           </Wrapper>
         </Column>

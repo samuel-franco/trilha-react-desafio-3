@@ -1,7 +1,7 @@
-Projeto de desafio da DIO - Tela de cadastro do site da DIO
 
+## 🚀 Projeto de desafio da DIO - Tela de cadastro do site da DIO
 
-## 🚀 Sobre o projeto
+# Sobre o projeto
 
 O Desafio consiste em replicar uma tela de cadastro para a incrível plataforma da Dio, usando os conceitos aprendidos nas aulas anteriores sobre React CLI, a estilização com styled-components, Hooks e Formulários.
 
